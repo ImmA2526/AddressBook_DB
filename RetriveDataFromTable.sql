@@ -16,3 +16,12 @@ select * from PersonalDetail p inner join AddressDetail a on
 p.addressID =a.addressID inner join Person_Contact pc on
 p.personID=pc.personID inner join ContactType ct on
 pc.contactID=ct.contactID where a.city='Pune' order by p.first_name
+
+/*UC 10 Retrive Data By Type*/
+
+select * from PersonalDetail p inner join AddressDetail a on
+p.addressID =a.addressID inner join Person_Contact pc on
+p.personID=pc.personID inner join ContactType ct on
+pc.contactID=ct.contactID where ct.contactName='Friends'
+
+select * from AddressDetail
