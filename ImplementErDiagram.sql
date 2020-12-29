@@ -1,5 +1,5 @@
 create table AddressDetail
-(
+( 
 	addressID int not null primary key,
 	area varchar(20) not null,
 	city varchar(20) not null,
